@@ -1896,6 +1896,9 @@ footer .container {
   align-items: center;
   margin-bottom: 5px;
 }
+.jobtop-vak.mob {
+  display: none;
+}
 
 .jobtop-vak__text {
   color: #FFF;
@@ -3199,6 +3202,12 @@ footer .container {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
+  }
+  .jobtop-vak.mob {
+    display: flex;
+  }
+  .jobtop-vak.desk {
+    display: none;
   }
   .jobtop-vak__text {
     color: #FFF;
