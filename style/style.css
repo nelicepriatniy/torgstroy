@@ -1875,6 +1875,191 @@ footer .container {
   left: 0;
 }
 
+.jobtop {
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.jobtob__wraper {
+  display: flex;
+}
+
+.jobtop-bg {
+  width: 276px;
+  height: 589px;
+  margin-right: 50px;
+  border-radius: 6px;
+}
+
+.jobtop-vak {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.jobtop-vak__text {
+  color: #FFF;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 21.691px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 0.775px;
+  background: #F1A02D;
+  margin-right: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 138px;
+  height: 40px;
+}
+
+.job-vak__dol {
+  color: #000;
+  font-size: 63.524px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+.job-vak__dol::after {
+  content: "";
+  display: block;
+  width: 11.031px;
+  height: 11.031px;
+  background: #F1A02D;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.jotop__place {
+  color: #717171;
+  font-size: 21.691px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+
+.jobtop__obyaz {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.jobtop__list {
+  width: 465px;
+}
+
+.jobtop__list__item {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+  display: flex;
+}
+.jobtop__list__item:last-child {
+  margin-bottom: 0;
+}
+.jobtop__list__item::before {
+  margin-top: 3px;
+  content: "";
+  display: block;
+  margin-right: 10px;
+  width: 11.031px;
+  height: 11.031px;
+  background: #F1A02D;
+  flex-shrink: 0;
+}
+
+.jobbtm {
+  margin-bottom: 75px;
+}
+.jobbtm .container {
+  display: flex;
+}
+
+.jobbtm__ojidanie {
+  width: 465px;
+  margin-right: 195px;
+}
+
+.jobbtm__ojidanie__heading {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.jobbtm__ojidanie__list__item {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+  display: flex;
+}
+.jobbtm__ojidanie__list__item:last-child {
+  margin-bottom: 0;
+}
+.jobbtm__ojidanie__list__item::before {
+  margin-top: 3px;
+  content: "";
+  display: block;
+  margin-right: 10px;
+  width: 11.031px;
+  height: 11.031px;
+  background: #F1A02D;
+  flex-shrink: 0;
+}
+
+.jobbtm__ofer__heading {
+  color: #000;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.jobbtm__ofer__list__item {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+  display: flex;
+}
+.jobbtm__ofer__list__item:last-child {
+  margin-bottom: 0;
+}
+.jobbtm__ofer__list__item::before {
+  margin-top: 3px;
+  content: "";
+  display: block;
+  margin-right: 10px;
+  width: 11.031px;
+  height: 11.031px;
+  background: #F1A02D;
+  flex-shrink: 0;
+}
+
 @media (max-width: 1024px) {
   .desk {
     display: none;
@@ -2997,5 +3182,149 @@ footer .container {
   .contacts-bg {
     height: 100%;
     width: auto;
+  }
+  .jobtop {
+    margin-top: 110px;
+  }
+  .jobtob__wraper {
+    flex-direction: column;
+  }
+  .jobtop-bg {
+    width: 246px;
+    height: auto;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .jobtop-vak {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .jobtop-vak__text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 199px;
+    height: 46px;
+    margin-bottom: 13px;
+  }
+  .job-vak__dol {
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102.5%; /* 24.6px */
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+  .job-vak__dol::after {
+    width: 10px;
+    height: 10px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+  }
+  .jotop__place {
+    color: #787878;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+  }
+  .jobtop__obyaz {
+    width: 100%;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102.5%; /* 24.6px */
+    letter-spacing: 0.24px;
+    margin-bottom: 25px;
+  }
+  .jobtop__list {
+    width: 100%;
+  }
+  .jobtop__list__item {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .jobtop__list__item:last-child {
+    margin-bottom: 0;
+  }
+  .jobtop__list__item::before {
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+  }
+  .jobbtm .container {
+    flex-direction: column;
+  }
+  .jobbtm__ojidanie {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .jobbtm__ojidanie__heading {
+    width: 100%;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102.5%; /* 24.6px */
+    letter-spacing: 0.24px;
+    margin-bottom: 25px;
+  }
+  .jobbtm__ojidanie__list {
+    width: 100%;
+    margin: 0;
+  }
+  .jobbtm__ojidanie__list__item {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .jobbtm__ojidanie__list__item:last-child {
+    margin-bottom: 0;
+  }
+  .jobbtm__ojidanie__list__item::before {
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
+  }
+  .jobbtm__ofer__heading {
+    width: 100%;
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 102.5%; /* 24.6px */
+    letter-spacing: 0.24px;
+    margin-bottom: 25px;
+  }
+  .jobbtm__ofer__list__item {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  .jobbtm__ofer__list__item:last-child {
+    margin-bottom: 0;
+  }
+  .jobbtm__ofer__list__item::before {
+    width: 11px;
+    height: 11px;
+    margin-right: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
