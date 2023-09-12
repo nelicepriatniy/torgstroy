@@ -42,7 +42,24 @@ body.white header a {
 header {
   position: absolute;
   z-index: 2;
-  margin-top: 36px;
+  padding-top: 36px;
+  transition: all 0.4s ease;
+}
+header.dixed {
+  position: fixed;
+  background: #0E1621;
+  margin-top: 0;
+  z-index: 99;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  transform: translateY(-100%);
+}
+header.dixed a {
+  color: white !important;
+}
+header.dixedActive {
+  transform: translateY(0);
 }
 
 .header-container {
@@ -98,11 +115,18 @@ header {
   background: #EA7A3A;
 }
 
+.main-slider {
+  height: 100%;
+}
+
+.main-slide {
+  padding-top: 245px;
+}
+
 .mainBlock {
   position: relative;
   height: 100vh;
   display: flex;
-  padding-top: 245px;
   display: flex;
   align-items: center;
 }
@@ -565,7 +589,7 @@ footer .container {
   width: 260px;
   height: 42px;
   background: white;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 18px 11px;
   margin-bottom: 12px;
   color: black;
@@ -719,6 +743,7 @@ footer .container {
   width: 199px;
   height: 52px;
   margin-right: 80px;
+  background: #F1A02D;
 }
 
 .mainOfice__top__title {
@@ -776,6 +801,8 @@ footer .container {
   height: 340px;
   width: 100%;
   background-repeat: 30px;
+  border-radius: 30px;
+  border: 1px solid #F1A02D !important;
 }
 
 .secondOfice {
@@ -833,6 +860,8 @@ footer .container {
   height: 352px;
   border-radius: 30px;
   margin-right: 40px;
+  border-radius: 30px;
+  border: 1px solid #F1A02D !important;
 }
 
 .secondOfice__info {
@@ -873,7 +902,7 @@ footer .container {
 }
 
 .oferCards {
-  margin-top: 228px;
+  margin-top: 116px;
 }
 
 .oferCards__heading {
@@ -1130,6 +1159,7 @@ footer .container {
   line-height: normal;
   text-transform: uppercase;
   margin-bottom: 70px;
+  width: 950px;
 }
 
 .products__wraper {
@@ -1479,6 +1509,7 @@ footer .container {
   justify-content: center;
   width: 100%;
   margin-bottom: 70px;
+  align-items: center;
 }
 
 .team__heading__img {
@@ -1721,6 +1752,10 @@ footer .container {
   height: 60px;
 }
 
+.sertif-slide-wraper {
+  padding: 6px;
+}
+
 .contacts {
   padding-top: 78px;
   padding-bottom: 70px;
@@ -1759,6 +1794,7 @@ footer .container {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .contacts-left__item {
@@ -1889,6 +1925,8 @@ footer .container {
   height: 589px;
   margin-right: 50px;
   border-radius: 6px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .jobtop-vak {
@@ -1959,7 +1997,7 @@ footer .container {
 }
 
 .jobtop__list {
-  width: 465px;
+  width: 500px;
 }
 
 .jobtop__list__item {
@@ -2071,7 +2109,11 @@ footer .container {
     display: inherit;
   }
   header {
-    margin-top: 20px;
+    padding-top: 20px;
+  }
+  body, html {
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   .orangeBtn {
     font-size: 15.47px;
@@ -2220,6 +2262,14 @@ footer .container {
     flex-direction: column;
     margin-bottom: 20px;
   }
+  .textBlock__img {
+    width: 282.337px;
+    height: 152px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 6.662px;
+    overflow: hidden;
+  }
   .textBlock__wraper__text {
     font-size: 15px;
     font-style: normal;
@@ -2269,11 +2319,11 @@ footer .container {
     margin-bottom: 5px;
   }
   .cardBlock-card__text {
-    font-size: 10.317px;
+    color: #FFF;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 15px;
   }
   .textBlock__bg {
     width: 100%;
@@ -2348,7 +2398,7 @@ footer .container {
     right: 63px;
   }
   .formBlock__left__text {
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -2453,12 +2503,40 @@ footer .container {
     width: 100%;
   }
   .footer__nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 72px 68px 88px;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 10px;
   }
   .footer__nav__list__item {
-    margin-right: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .footer__nav__list__item:nth-child(1) {
+    order: 1;
+  }
+  .footer__nav__list__item:nth-child(3) {
+    order: 2;
+  }
+  .footer__nav__list__item:nth-child(4) {
+    order: 3;
+  }
+  .footer__nav__list__item:nth-child(2) {
+    order: 4;
+  }
+  .footer__nav__list__item:nth-child(5) {
+    order: 5;
+  }
+  .footer__nav__list__item:nth-child(6) {
+    order: 6;
+  }
+  .footer__nav__list__item:nth-child(7) {
+    order: 7;
+  }
+  .footer__nav__list__item:nth-child(8) {
+    order: 8;
+    grid-column: 2/span 2;
   }
   .footer__form__form .politycText {
     font-size: 11px;
@@ -2763,6 +2841,10 @@ footer .container {
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
+  .services-item {
+    border-radius: 6px;
+    overflow: hidden;
+  }
   .services-item__info {
     padding: 6px;
   }
@@ -2773,7 +2855,7 @@ footer .container {
     line-height: 104%;
     /* 15.6px */
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
   .services-item__info__block__text {
     font-size: 14px;
@@ -2923,6 +3005,13 @@ footer .container {
     left: 80px;
     width: 207px;
     height: 65px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .derek-white-block.desk {
+    display: none;
   }
   .derek-white-block__text {
     font-size: 11.049px;
@@ -2936,7 +3025,7 @@ footer .container {
     right: -178px;
   }
   .derek__bg {
-    height: 383px;
+    height: 673px;
     width: auto;
   }
   .derek__man {
@@ -2963,6 +3052,11 @@ footer .container {
     width: 129.636px;
     height: 46.207px;
     margin-bottom: 10px;
+  }
+  .partners-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .partners__heading {
     font-size: 26px;
@@ -3003,6 +3097,9 @@ footer .container {
     border-radius: 15px;
     height: 129px;
     padding-left: 5px;
+  }
+  .team-item__osn .team-item__text {
+    padding: 0;
   }
   .team__top__dir {
     padding: 0 18px;
@@ -3049,6 +3146,7 @@ footer .container {
   }
   .team-item__osn {
     padding-left: 5px;
+    align-items: center;
   }
   .team-item__osn:first-child .team-item__text {
     padding-top: 33px;
@@ -3075,7 +3173,7 @@ footer .container {
   .team-item__person {
     position: absolute;
     height: 155px;
-    right: 0;
+    right: -15px;
     top: 0;
   }
   .team__top__isp .team-item__person {
@@ -3154,13 +3252,13 @@ footer .container {
     align-items: center;
   }
   .contact-client__img {
-    width: 225px;
+    width: 100%;
     height: auto;
     margin: 0;
   }
   .contact-client__wraper {
     padding: 18px 20px;
-    width: 227px;
+    width: 100%;
     height: 98px;
     margin-bottom: 20px;
   }
@@ -3194,9 +3292,11 @@ footer .container {
   }
   .jobtop-bg {
     width: 246px;
-    height: auto;
+    height: 207px;
     margin: 0;
     margin-bottom: 30px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .jobtop-vak {
     flex-direction: column;

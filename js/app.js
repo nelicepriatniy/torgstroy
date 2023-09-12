@@ -29,6 +29,24 @@ const partnersSlider = new Swiper('.partners-slider', {
         },
       }
 });
+
+const mainSlider = new Swiper('.main-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        // when window width is >= 480px
+        1024: {
+            slidesPerView: 1,
+        },
+      }
+});
 const sertifSlider = new Swiper('.sertif-slider', {
     speed: 400,
     navigation: {
@@ -47,3 +65,15 @@ const sertifSlider = new Swiper('.sertif-slider', {
         },
       }
 });
+
+window.onscroll = ()=>{
+  if(window.scrollY > 200) {
+    document.querySelector('header').classList.add('dixedActive')
+  }
+  if(window.scrollY > 100) {
+    document.querySelector('header').classList.add('dixed')
+  } else {
+    document.querySelector('header').classList.remove('dixed')
+    document.querySelector('header').classList.remove('dixedActive')
+  }
+}

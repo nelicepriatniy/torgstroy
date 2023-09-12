@@ -44,7 +44,24 @@ body {
 header {
     position: absolute;
     z-index: 2;
-    margin-top: 36px;
+    padding-top: 36px;
+    transition: all .4s ease;
+    &.dixed {
+        position: fixed;
+        background: #0E1621;
+        margin-top: 0;
+        z-index: 99;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        transform: translateY(-100%);
+        & a {
+            color: white !important;   
+        }
+    }
+    &.dixedActive {
+        transform: translateY(0);
+    }
 }
 
 .header-container {
@@ -101,11 +118,18 @@ header {
     background: #EA7A3A;
 }
 
+.main-slider {
+    height: 100%;
+}
+
+.main-slide {
+    padding-top: 245px;
+}
+
 .mainBlock {
     position: relative;
     height: 100vh;
     display: flex;
-    padding-top: 245px;
     display: flex;
     align-items: center;
 
@@ -600,7 +624,7 @@ footer {
     width: 260px;
     height: 42px;
     background: white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 18px 11px;
     margin-bottom: 12px;
     color: black;
@@ -758,6 +782,7 @@ footer {
     width: 199px;
     height: 52px;
     margin-right: 80px;
+    background: #F1A02D;
 }
 
 .mainOfice__top__title {
@@ -816,6 +841,8 @@ footer {
     height: 340px;
     width: 100%;
     background-repeat: 30px;
+    border-radius: 30px;
+    border: 1px solid #F1A02D !important;
 }
 
 .secondOfice {
@@ -875,6 +902,8 @@ footer {
     height: 352px;
     border-radius: 30px;
     margin-right: 40px;
+    border-radius: 30px;
+    border: 1px solid #F1A02D !important;
 }
 
 .secondOfice__info {
@@ -916,7 +945,7 @@ footer {
 }
 
 .oferCards {
-    margin-top: 228px;
+    margin-top: 116px;
 }
 
 .oferCards__heading {
@@ -1179,6 +1208,7 @@ footer {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 70px;
+    width: 950px;
 }
 
 .products__wraper {
@@ -1541,6 +1571,7 @@ footer {
     justify-content: center;
     width: 100%;
     margin-bottom: 70px;
+    align-items: center;
 }
 
 .team__heading__img {
@@ -1793,6 +1824,9 @@ footer {
     height: 60px;
 }
 
+.sertif-slide-wraper {
+    padding: 6px;
+}
 .contacts {
     padding-top: 78px;
     padding-bottom: 70px;
@@ -1831,6 +1865,7 @@ footer {
     font-weight: 400;
     line-height: normal;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .contacts-left__item {
@@ -1958,6 +1993,7 @@ footer {
     height: 589px;
     margin-right: 50px;
     border-radius: 6px;
+    object-fit: cover;
 }
 .jobtop-info {
 }
@@ -2024,7 +2060,7 @@ footer {
     margin-bottom: 20px;
 }
 .jobtop__list {
-    width: 465px;
+    width: 500px;
 }
 .jobtop__list__item {
     color: #000;
@@ -2141,7 +2177,12 @@ footer {
     }
 
     header {
-        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    body, html {
+        max-width: 100vw;
+        overflow-x: hidden;
     }
 
     .orangeBtn {
@@ -2317,6 +2358,13 @@ footer {
         flex-direction: column;
         margin-bottom: 20px;
     }
+    .textBlock__img {
+        width: 282.337px;
+        height: 152px;
+        object-fit: cover;
+        border-radius: 6.662px;
+        overflow: hidden;
+    }
 
     .textBlock__wraper__text {
         font-size: 15px;
@@ -2375,11 +2423,11 @@ footer {
     }
 
     .cardBlock-card__text {
-        font-size: 10.317px;
+        color: #FFF;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        margin-bottom: 15px;
     }
 
     .textBlock__bg {
@@ -2472,7 +2520,7 @@ footer {
     }
 
     .formBlock__left__text {
-        font-size: 20px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -2593,13 +2641,40 @@ footer {
     }
 
     .footer__nav__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 72px 68px 88px;
+        column-gap: 24px;
+        row-gap: 10px;
     }
 
     .footer__nav__list__item {
-        margin-right: 10px;
+        margin-right: 0;
+        margin-bottom: 0;
+        &:nth-child(1) {
+            order: 1;
+        }
+        &:nth-child(3) {
+            order: 2;
+        }
+        &:nth-child(4) {
+            order: 3;
+        }
+        &:nth-child(2) {
+            order: 4;
+        }
+        &:nth-child(5) {
+            order: 5;
+        }
+        &:nth-child(6) {
+            order: 6;
+        }
+        &:nth-child(7) {
+            order: 7;
+        }
+        &:nth-child(8) {
+            order: 8;
+            grid-column: 2 / span 2;
+        }
     }
 
     .footer__form__form .politycText {
@@ -2970,7 +3045,10 @@ footer {
         column-gap: 10px;
     }
 
-    .services-item {}
+    .services-item {
+        border-radius: 6px;
+        overflow: hidden;
+    }
 
     .services-item__bg {}
 
@@ -2987,7 +3065,7 @@ footer {
         line-height: 104%;
         /* 15.6px */
         text-transform: uppercase;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .services-item__info__block {}
@@ -3151,6 +3229,13 @@ footer {
         left: 80px;
         width: 207px;
         height: 65px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.desk {
+            display: none;
+        }
     }
     .derek-white-block__text {
         font-size: 11.049px;
@@ -3164,7 +3249,7 @@ footer {
         right: -178px;
     }
     .derek__bg {
-        height: 383px;
+        height: 673px;
         width: auto;
     }
     .derek__gradient {
@@ -3197,6 +3282,11 @@ footer {
         width: 129.636px;
         height: 46.207px;
         margin-bottom: 10px;
+    }
+    .partners-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .partners__heading {
         font-size: 26px;
@@ -3239,6 +3329,9 @@ footer {
         border-radius: 15px;
         height: 129px;
         padding-left: 5px;
+    }
+    .team-item__osn .team-item__text {
+        padding: 0;
     }
     .team__top__dir {
         padding: 0 18px;
@@ -3287,6 +3380,7 @@ footer {
     }
     .team-item__osn {
         padding-left: 5px;
+        align-items: center;
         &:first-child {
             & .team-item__text {
                 padding-top: 33px;
@@ -3317,7 +3411,7 @@ footer {
     .team-item__person {
         position: absolute;
         height: 155px;
-        right: 0;
+        right: -15px;
         top: 0;
     }
     .team__top__isp {
@@ -3400,13 +3494,13 @@ footer {
         align-items: center;
     }
     .contact-client__img {
-        width: 225px;
+        width: 100%;
         height: auto;
         margin: 0;
     }
     .contact-client__wraper {
         padding: 18px 20px;
-        width: 227px;
+        width: 100%;
         height: 98px;
         margin-bottom: 20px;
     }
@@ -3442,9 +3536,10 @@ footer {
     }
     .jobtop-bg {
         width: 246px;
-        height: auto;
+        height: 207px;
         margin: 0;
         margin-bottom: 30px;
+        object-fit:cover
     }
     .jobtop-info {
     }
@@ -3593,3 +3688,4 @@ footer {
         }
     }
 }
+
