@@ -39,7 +39,6 @@ const mainSlider = new Swiper('.main-slider', {
     breakpoints: {
         320: {
           slidesPerView: 1,
-          spaceBetween: 30,
         },
         // when window width is >= 480px
         1024: {

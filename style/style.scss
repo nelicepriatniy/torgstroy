@@ -762,7 +762,7 @@ footer {
 }
 
 .mainOfice {
-    padding-top: 250px;
+    padding-top: 120px;
     position: relative;
     overflow: hidden;
     margin-bottom: 183px;
@@ -2170,6 +2170,16 @@ footer {
 
     .desk {
         display: none;
+    }
+
+    .main-slider {
+        max-width: 100%;
+    }
+
+    .main-slide {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
     }
 
     .mob {
