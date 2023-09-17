@@ -155,6 +155,9 @@ header.dixedActive {
 .mainBlock__heading.main-heading {
   width: 852px;
 }
+.mainBlock__heading.pt {
+  margin-top: 150px;
+}
 
 .mainBlock__text {
   width: 397px;
@@ -915,7 +918,7 @@ footer .container {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
 }
 .oferCards__heading::after {
   content: "";
@@ -1912,7 +1915,7 @@ footer .container {
 }
 
 .jobtop {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: 50px;
 }
 
@@ -2101,7 +2104,43 @@ footer .container {
   flex-shrink: 0;
 }
 
+.img-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 101;
+  transition: all 0.4s ease;
+  transform: translate(-50%, -200vh);
+}
+.img-popup.active {
+  transform: translate(-50%, -50%);
+}
+
+.popupInsightImg {
+  height: 90vh;
+}
+
+.popupClose {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: black;
+  opacity: 0.4;
+  transition: all 0.4s ease;
+  transform: translateY(-100vh);
+}
+.popupClose.active {
+  transform: translate(0, 0);
+}
+
 @media (max-width: 1024px) {
+  .popupInsightImg {
+    height: auto;
+    width: 90vw;
+  }
   .desk {
     display: none;
   }
@@ -2271,7 +2310,7 @@ footer .container {
     margin-bottom: 20px;
   }
   .textBlock__img {
-    width: 282.337px;
+    width: 100%;
     height: 152px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -2815,6 +2854,7 @@ footer .container {
     display: flex;
     flex-direction: column;
     flex-flow: column-reverse;
+    margin-bottom: 25px;
   }
   .services__heading {
     font-size: 27px;
@@ -2899,6 +2939,7 @@ footer .container {
     line-height: normal;
     text-transform: uppercase;
     margin-bottom: 20px;
+    width: 100%;
   }
   .products__wraper {
     grid-template-columns: 1fr;
@@ -2958,6 +2999,7 @@ footer .container {
   .pluss__bg {
     height: 100%;
     width: auto;
+    left: -400px;
   }
   .derek {
     background: #212121;
@@ -3266,7 +3308,7 @@ footer .container {
   }
   .contact-client__wraper {
     padding: 18px 20px;
-    width: 100%;
+    width: 80%;
     height: 98px;
     margin-bottom: 20px;
   }

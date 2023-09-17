@@ -159,6 +159,9 @@ header {
     &.main-heading {
         width: 852px;
     }
+    &.pt {
+        margin-top: 150px;
+    }
 }
 
 .mainBlock__text {
@@ -957,7 +960,7 @@ footer {
     text-transform: uppercase;
     position: relative;
     width: fit-content;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 
     &::after {
         content: '';
@@ -1982,7 +1985,7 @@ footer {
     left: 0;
 }
 .jobtop {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 .jobtob__wraper {
@@ -2163,9 +2166,46 @@ footer {
     }
 }
 
+.img-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 101;
+    transition: all .4s ease;
+    transform: translate(-50%, -200vh);
+    &.active {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.popupInsightImg {
+    height: 90vh;
+}
+
+.popupClose {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: black;
+    opacity: .4;
+    transition: all .4s ease;
+    transform: translateY(-100vh);
+    &.active {
+        transform: translate(0, 0);
+    }
+}
+
 @media (max-width: 1024px) {
     * {
         // outline: solid 1px red;
+    }
+    
+    .popupInsightImg {
+        height: auto;
+        width: 90vw;
     }
 
     .desk {
@@ -2369,7 +2409,7 @@ footer {
         margin-bottom: 20px;
     }
     .textBlock__img {
-        width: 282.337px;
+        width: 100%;
         height: 152px;
         object-fit: cover;
         border-radius: 6.662px;
@@ -3016,6 +3056,7 @@ footer {
         display: flex;
         flex-direction: column;
         flex-flow: column-reverse;
+        margin-bottom: 25px;
     }
 
     .services__heading {
@@ -3117,6 +3158,7 @@ footer {
         line-height: normal;
         text-transform: uppercase;
         margin-bottom: 20px;
+        width: 100%;
     }
     .products__wraper {
         grid-template-columns: 1fr;
@@ -3179,6 +3221,7 @@ footer {
     .pluss__bg {
         height: 100%;
         width: auto;
+        left: -400px;
     }
     .derek {
         background: #212121;
@@ -3510,7 +3553,7 @@ footer {
     }
     .contact-client__wraper {
         padding: 18px 20px;
-        width: 100%;
+        width: 80%;
         height: 98px;
         margin-bottom: 20px;
     }

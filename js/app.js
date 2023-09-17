@@ -19,8 +19,8 @@ const partnersSlider = new Swiper('.partners-slider', {
     },
     breakpoints: {
         320: {
-          slidesPerView: 1,
-          spaceBetween: 30,
+          slidesPerView: 1.2,
+          spaceBetween: 10,
         },
         // when window width is >= 480px
         1024: {
@@ -31,10 +31,10 @@ const partnersSlider = new Swiper('.partners-slider', {
 });
 
 const mainSlider = new Swiper('.main-slider', {
-    speed: 400,
+    speed: 1200,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
     breakpoints: {
         320: {
@@ -76,3 +76,26 @@ window.onscroll = ()=>{
     document.querySelector('header').classList.remove('dixedActive')
   }
 }
+
+const closePopus = document.querySelector('.popupClose');
+const popups = document.querySelectorAll('.popup');
+closePopus.onclick = ()=>{
+  closePopus.classList.remove('active')
+  popups.forEach(el=>{
+    el.classList.remove('active')
+  })
+}
+
+//открытие картиновк во весь экран
+
+const imgsOpen = document.querySelectorAll('.img-open-popup');//блок с картинкой которую надо увеличить
+const imgPopup = document.querySelector('.popupInsightImg'); //изабражение внутри попапа
+const imgPupupBlock = document.querySelector('.img-popup'); //блок попапа
+imgsOpen.forEach(el=>{
+    el.onclick = ()=>{
+      let imgSrc = el.querySelector('.img-open-popup-src').getAttribute('src');
+      imgPupupBlock.classList.add('active');
+      imgPopup.setAttribute('src', imgSrc)
+      closePopus.classList.add('active');
+    }
+})
