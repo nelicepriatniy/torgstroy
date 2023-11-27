@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body class="white">
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="header__logo"><img src="./media/icons/logo.png" alt="" class="header__logo__img"></a>
+            <ul class="header__list desk">
+                <li class="header__list__item"><a href="">Услуги</a></li>
+                <li class="header__list__item"><a href="">О нас</a></li>
+                <li class="header__list__item"><a href="">Отзывы</a></li>
+                <li class="header__list__item"><a href="">Сертификаты</a></li>
+                <li class="header__list__item"><a href="">Клиенты</a></li>
+                <li class="header__list__item"><a href="./contacts.html">Контакты</a></li>
+                <li class="header__list__item"><a href="./ofer.html">Вакансии</a></li>
+                <li class="header__list__item"><a href="">Строй. материалы</a></li>
+            </ul>
+            <a href="" class="header__telephone desk">+ 7 (495) 145-75-17</a>
+            <button class="orangeBtn header__button desk">Заказать звонок</button>
+            <div class="header__burger mob">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="37" viewBox="0 0 38 37" fill="none">
+                    <g filter="url(#filter0_d_1068_120)">
+                        <rect x="4" width="30" height="30" rx="15" fill="black" fill-opacity="0.5"
+                            shape-rendering="crispEdges" />
+                    </g>
+                    <line x1="11" y1="10.5" x2="27" y2="10.5" stroke="white" />
+                    <line x1="11" y1="14.5" x2="27" y2="14.5" stroke="white" />
+                    <line x1="11" y1="18.5" x2="27" y2="18.5" stroke="white" />
+                    <defs>
+                        <filter id="filter0_d_1068_120" x="0.948553" y="0" width="36.1029" height="36.1029"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="3.05145" />
+                            <feGaussianBlur stdDeviation="1.52572" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1068_120" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1068_120"
+                                result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <div class="header-menu mob">
+        <img src="./media/icons/closeMobileMenu.svg" alt="" class="closeMomMenu">
+        <div class="meader-menu__wraper">
+            <img src="./media/icons/logo.png" alt="" class="header-menu__logo">
+            <ul class="header-menu__list">
+                <li class="header-menu__list__item"><a href="">Услуги</a></li>
+                <li class="header-menu__list__item"><a href="">О нас</a></li>
+                <li class="header-menu__list__item"><a href="">Отзывы</a></li>
+                <li class="header-menu__list__item"><a href="">Сертификаты</a></li>
+                <li class="header-menu__list__item"><a href="">Клиенты</a></li>
+                <li class="header-menu__list__item"><a href="./contacts.html">Контакты</a></li>
+                <li class="header-menu__list__item"><a href="./ofer.html">Вакансии</a></li>
+                <li class="header-menu__list__item"><a href="">Строй. материалы</a></li>
+            </ul>
+            <p class="header-menu__phone">+7 (495) 145-75-17</p>
+            <div class="orangeBtn header-menu__btn">Заказать звонок</div>
+        </div>
+    </div>
+
+    <main>
+        <section class="korzina__heading">
+            <div class="container">
+                <p class="korzina__heading__text">Корзина</p>
+            </div>
+        </section>
+        <section class="korzina__selection">
+            <div class="container">
+                <div class="korzina-section__top">
+                    <div class="korzina-section__top__item">
+                        <img src="./media/icons/delete.png" alt="" class="korzina-section__top__item__img">
+                        <p class="korzina-section__top__item__text">Удалить выбранные позиции</p>
+                    </div>
+                    <div class="korzina-section__top__item">
+                        <img src="./media/icons/obemVes.png" alt="" class="korzina-section__top__item__img">
+                        <p class="korzina-section__top__item__text">Посмотреть объем и вес</p>
+                    </div>
+                    <div class="korzina-section__top__item">
+                        <img src="./media/icons/dostypnost.png" alt="" class="korzina-section__top__item__img">
+                        <p class="korzina-section__top__item__text">Доступность</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="korzina_table__block">
+            <div class="container">
+                <div class="korzina-table desk">
+                    <input type="checkbox" name="tovar" id="" class="korzina-table__item checkbox">
+                    <p class="korzina-table__item text top">№</p>
+                    <p class="korzina-table__item text top">Код позиции</p>
+                    <p class="korzina-table__item text top">Описание позиции</p>
+                    <p class="korzina-table__item text top">Количество</p>
+                    <p class="korzina-table__item text top">Цена (с НДС)</p>
+                    <p class="korzina-table__item text top">Удалить</p>
+                </div>
+                <div class="korzina-table">
+                    <div class="tovar-num tovar-mob-item top">
+                        <div class="tovar-select-mob">
+                            <input type="checkbox" name="tovar" id="" class="korzina-table__item checkbox">
+                            <p class="mob tovar-heading">Выбрать</p>
+                        </div>
+                        <img src="./media/icons/delete.png" alt="" class="korzina-table__item delete">
+                    </div>
+                    <div class="tovar-num tovar-mob-item">
+                        <p class="mob tovar-heading">№</p>
+                        <p class="mob tovar-line">...............</p>
+                        <p class="korzina-table__item text ">1</p>
+                    </div>
+                    <div class="tovar-code tovar-mob-item">
+                        <p class="mob tovar-heading">Код позиции</p>
+                        <p class="mob tovar-line">...............</p>
+                        <p class="korzina-table__item text ">484828</p>
+                    </div>
+                    <div class="tovar-desc tovar-mob-item">
+                        <p class="mob tovar-heading">Описание позиции</p>
+                        <p class="mob tovar-line">...............</p>
+                        <p class="korzina-table__item text ">Изолятор штырьевой фарфоровый ШФ-20 Г1 (длина пути утечки 400мм) НИЛЕД 23400252</p>
+                    </div>
+                    <div class="tovar-desc tovar-mob-item">
+                        <p class="mob tovar-heading">Единица  измерения</p>
+                        <p class="mob tovar-line">...............</p>
+                        <p class="korzina-table__item text ">Штука</p>
+                    </div>
+                    <div class="tovar-kol-vo tovar-mob-item">
+                        <p class="mob tovar-heading">Количество</p>
+                        <p class="mob tovar-line">...............</p>
+                        <input type="number" class="korzina-table__item number" min="1" value="1">
+                    </div>
+                    <div class="tovar-price tovar-mob-item">
+                        <p class="mob tovar-heading ">Цена (с НДС) </p>
+                        <p class="mob tovar-line">...............</p>
+                        <p class="korzina-table__item text ">2534.40</p>
+                    </div>
+                    <div class="tovar-summ tovar-mob-item desk">
+                        <img src="./media/icons/delete.png" alt="" class="korzina-table__item delete">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mob mob-obem">
+            <div class="container">
+                <div class="obem-item">
+                    <p class="obem-heading">Длина:</p>
+                    <p class="obem-text">0.41м</p>
+                </div>
+                <div class="obem-item">
+                    <p class="obem-heading">Ширина:</p>
+                    <p class="obem-text">0.41м</p>
+                </div>
+                <div class="obem-item">
+                    <p class="obem-heading">Выоста:</p>
+                    <p class="obem-text">0.41м</p>
+                </div>
+                <div class="obem-item">
+                    <p class="obem-heading">Объем:</p>
+                    <p class="obem-text">0.41м</p>
+                </div>
+                <div class="obem-item">
+                    <p class="obem-heading">Вес:</p>
+                    <p class="obem-text">0.41м</p>
+                </div>
+            </div>
+        </section>
+        <section class="mob mob-dostup">
+            <div class="container">
+                <div class="dostup-item">
+                    <p class="dostup-heading">Для выбранного адреса</p>
+                </div>
+                <div class="dostup-item">
+                    <p class="dostup-heading">Склад:</p>
+                </div>
+                <div class="dostup-item">
+                    <p class="dostup-heading">Доступность:</p>
+                </div>
+            </div>
+        </section>
+        <section class="korzina-promokod">
+            <div class="container">
+                <div class="promokob-inp">
+                    <p class="promokod-inp__name">Промокод:</p>
+                    <div class="promokod-premenit">
+                        <input type="text" name="promokod" id="" class="promokod-inp__input">
+                        <button class="promokod-primenit-button">Пременить</button>
+                    </div>
+                </div>
+                <button class="promokod-pererascher desk">Перерасчет</button>
+            </div>
+        </section>
+        <section class="korzina__info">
+            <div class="container">
+                <div class="korzina__info__item">
+                    <p class="korzina__info__item__name">Объем</p>
+                    <div class="korzina__info__item__line"></div>
+                    <p class="korzina__info__item__value">0.009 м³</p>
+                </div>
+                <div class="korzina__info__item">
+                    <p class="korzina__info__item__name">Вес</p>
+                    <div class="korzina__info__item__line"></div>
+                    <p class="korzina__info__item__value">4.5 кг</p>
+                </div>
+                <div class="korzina__info__item">
+                    <p class="korzina__info__item__name itogo">Итого</p>
+                    <div class="korzina__info__item__line"></div>
+                    <p class="korzina__info__item__value">2534.40 ₽</p>
+                </div>
+                <div class="korzina__info__item">
+                    <p class="korzina__info__item__name">Количество товаров</p>
+                    <div class="korzina__info__item__line"></div>
+                    <p class="korzina__info__item__value">1</p>
+                </div>
+                <div class="korzina__info__item">
+                    <p class="korzina__info__item__name">Размер скидки</p>
+                    <div class="korzina__info__item__line"></div>
+                    <p class="korzina__info__item__value">0.00 ₽</p>
+                </div>
+                <div class="empty-grid"></div>
+                <div class="korzina__info__item">
+                    <p class="korzina__info__item__name">Сумма</p>
+                    <div class="korzina__info__item__line"></div>
+                    <p class="korzina__info__item__value">2112.00 ₽</p>
+                </div>
+                <div class="korzina__info__item">
+                    <p class="korzina__info__item__name">НДС (20%)
+                    </p>
+                    <div class="korzina__info__item__line"></div>
+                    <p class="korzina__info__item__value">422.40 ₽</p>
+                </div>
+            </div>
+        </section>
+        <section class="korzina__button">
+            <div class="container">
+                <button class="promokod-pererascher mob">Перерасчет</button>
+                <button class="korzina-add-zakaz">Перейти к оформлению заказа</button>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer__textr">
+                <img src="./media/icons/logo.png" alt="" class="footer__text__logo">
+                <p class="footer__text__text">Мы динамично развивающаяся строительная компания , работающая на рынке с
+                    2015 года. Будем рады стать вашим партнером и строить долгосрочные взаимовыгодные отношения!</p>
+                <div class="footer__text__seti">
+                    <a href="" class="mainBlock__seti"><img src="./media/icons/watsapp.png" alt=""
+                            class="mainBlock__seti__img"></a>
+                    <a href="" class="mainBlock__seti"><img src="./media/icons/telegram.png" alt=""
+                            class="mainBlock__seti__img"></a>
+                    <a href="" class="mainBlock__seti"><img src="./media/icons/vk.png" alt=""
+                            class="mainBlock__seti__img"></a>
+                    <a href="" class="mainBlock__seti"><img src="./media/icons/instagram.png" alt=""
+                            class="mainBlock__seti__img"></a>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav__heading">НАВИГАЦИЯ</p>
+                <ul class="footer__nav__list">
+                    <li class="footer__nav__list__item">Услуги</li>
+                    <li class="footer__nav__list__item">О нас</li>
+                    <li class="footer__nav__list__item">Отзывы</li>
+                    <li class="footer__nav__list__item">Сертификаты</li>
+                    <li class="footer__nav__list__item">Клиенты</li>
+                    <li class="footer__nav__list__item">Контакты</li>
+                    <li class="footer__nav__list__item">Вакансии</li>
+                    <li class="footer__nav__list__item">Строй. материалы</li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <p class="footer__contacts__heading">КОНТАКТЫ</p>
+                <ul class="footer__contacts__list">
+                    <li class="footer__contacts__list__item"><img src="./media/icons/location.svg" alt=""
+                            class="footer__contacts__list__img">
+                        <p class="footer__contacts__list__item__text">Москва, ул.Криворожская, д.6А, стр.2, офис 317</p>
+                    </li>
+                    <li class="footer__contacts__list__item"><img src="./media/icons/phone.svg" alt=""
+                            class="footer__contacts__list__img">
+                        <p class="footer__contacts__list__item__text">+7 (495) 145-75-17</p>
+                    </li>
+                    <li class="footer__contacts__list__item"><img src="./media/icons/mail.png" alt=""
+                            class="footer__contacts__list__img">
+                        <p class="footer__contacts__list__item__text">tsi@tsind.ru</p>
+                    </li>
+                    <li class="footer__contacts__list__item"><img src="./media/icons/clock.png" alt=""
+                            class="footer__contacts__list__img">
+                        <p class="footer__contacts__list__item__text">ПН-ПТ: с 9:00 до 18:00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__form">
+                <p class="footer__form__heading">ЗАКАЗ ЗВОНКА</p>
+                <div class="footer__form__form">
+                    <input type="text" class="footer__form__inp" placeholder="Ваше имя">
+                    <input type="text" class="footer__form__inp" placeholder="Телефон">
+                    <div class="politycInp">
+                        <input type="checkbox" id="formPolityc1" class="politycCheckbox pol1" checked>
+                        <label for="formPolityc1" class="politycVisual polvis1"><img src="./media/icons/goldYes.svg"
+                                alt="" class="politycVisual__img polImg1"></label>
+                        <label for="formPolityc1" class="politycText poltext1">Я согласен с политикой
+                            конфиденциальности</label>
+                    </div>
+                    <button class="orangeBtn footer__form__btn">ЗАПИСАТЬСЯ</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
