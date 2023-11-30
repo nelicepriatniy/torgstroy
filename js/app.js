@@ -256,3 +256,12 @@ if(vidSpiskaBtn.length >0) {
     }
   }
 }
+
+let tovarIzbImg = document.querySelectorAll('.tovar-kod__img');
+if(tovarIzbImg.length > 0 ) {
+  tovarIzbImg.forEach(el=>{
+    el.onclick = ()=>{
+      el.classList.toggle('active')
+    }
+  })
+}

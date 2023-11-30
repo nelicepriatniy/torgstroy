@@ -1,147 +1,75 @@
-<!DOCTYPE html>
-<html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./style/style.css">
-</head>
+<?php 
+/*
+* Template name: главная страница
+*/
+get_header();
+?>
 
-<body>
 
-    <header>
-        <div class="header-container">
-            <a href="#" class="header__logo"><img src="./media/icons/logo.png" alt="" class="header__logo__img"></a>
-            <ul class="header__list desk">
-                <li class="header__list__item"><a href="">Услуги</a></li>
-                <li class="header__list__item"><a href="">О нас</a></li>
-                <li class="header__list__item"><a href="">Отзывы</a></li>
-                <li class="header__list__item"><a href="">Сертификаты</a></li>
-                <li class="header__list__item"><a href="">Клиенты</a></li>
-                <li class="header__list__item"><a href="./contacts.html">Контакты</a></li>
-                <li class="header__list__item"><a href="./ofer.html">Вакансии</a></li>
-                <li class="header__list__item"><a href="">Строй. материалы</a></li>
-            </ul>
-            <a href="" class="header__telephone desk">+ 7 (495) 145-75-17</a>
-            <button class="orangeBtn header__button desk">Заказать звонок</button>
-            <div class="header__burger mob">
-                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="37" viewBox="0 0 38 37" fill="none">
-                    <g filter="url(#filter0_d_1068_120)">
-                        <rect x="4" width="30" height="30" rx="15" fill="black" fill-opacity="0.5"
-                            shape-rendering="crispEdges" />
-                    </g>
-                    <line x1="11" y1="10.5" x2="27" y2="10.5" stroke="white" />
-                    <line x1="11" y1="14.5" x2="27" y2="14.5" stroke="white" />
-                    <line x1="11" y1="18.5" x2="27" y2="18.5" stroke="white" />
-                    <defs>
-                        <filter id="filter0_d_1068_120" x="0.948553" y="0" width="36.1029" height="36.1029"
-                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix"
-                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                            <feOffset dy="3.05145" />
-                            <feGaussianBlur stdDeviation="1.52572" />
-                            <feComposite in2="hardAlpha" operator="out" />
-                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1068_120" />
-                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1068_120"
-                                result="shape" />
-                        </filter>
-                    </defs>
-                </svg>
-            </div>
-        </div>
-    </header>
-    <div class="header-menu mob">
-        <img src="./media/icons/closeMobileMenu.svg" alt="" class="closeMomMenu">
-        <div class="meader-menu__wraper">
-            <img src="./media/icons/logo.png" alt="" class="header-menu__logo">
-            <ul class="header-menu__list">
-                <li class="header-menu__list__item"><a href="">Услуги</a></li>
-                <li class="header-menu__list__item"><a href="">О нас</a></li>
-                <li class="header-menu__list__item"><a href="">Отзывы</a></li>
-                <li class="header-menu__list__item"><a href="">Сертификаты</a></li>
-                <li class="header-menu__list__item"><a href="">Клиенты</a></li>
-                <li class="header-menu__list__item"><a href="./contacts.html">Контакты</a></li>
-                <li class="header-menu__list__item"><a href="./ofer.html">Вакансии</a></li>
-                <li class="header-menu__list__item"><a href="">Строй. материалы</a></li>
-            </ul>
-            <p class="header-menu__phone">+7 (495) 145-75-17</p>
-            <div class="orangeBtn header-menu__btn">Заказать звонок</div>
-        </div>
-    </div>
-
-    <main>
+<main>
         <section class="mainBlock">
             <div class="swiper main-slider">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide main-slide">
-                        <div class="container">
-                            <h1 class="mainBlock__heading main-heading">Строительство промышленных и коммерческих
-                                объектов</h1>
-                            <p class="mainBlock__text">Запишитесь на бесплатную консультацию и мы ответим на все ваши
-                                вопросы</p>
-                            <div class="mainBlock__wraper">
-                                <button class="orangeBtn mainBlock__wraper__button">ЗАПИСАТЬСЯ </button>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/watsapp.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/telegram.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/vk.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/instagram.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                            </div>
+                  <div class="swiper-slide main-slide">
+                    <div class="container">
+                        <h1 class="mainBlock__heading main-heading">Строительство промышленных и коммерческих объектов</h1>
+                        <p class="mainBlock__text">Запишитесь на бесплатную консультацию и мы ответим на все ваши вопросы</p>
+                        <div class="mainBlock__wraper">
+                            <button class="orangeBtn mainBlock__wraper__button">ЗАПИСАТЬСЯ </button>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/watsapp.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/telegram.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/vk.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/instagram.png" alt=""
+                                    class="mainBlock__seti__img"></a>
                         </div>
-                        <img src="./media/mainBlock/bg.png" alt="" class="mainBlock__bg">
-
                     </div>
-                    <div class="swiper-slide main-slide">
-                        <div class="container">
-                            <h1 class="mainBlock__heading main-heading">производство электрощитового оборудования</h1>
-                            <p class="mainBlock__text">Запишитесь на бесплатную консультацию и мы ответим на все ваши
-                                вопросы</p>
-                            <div class="mainBlock__wraper">
-                                <button class="orangeBtn mainBlock__wraper__button">заказать расчет </button>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/watsapp.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/telegram.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/vk.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/instagram.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                            </div>
+                    <img src="./media/mainBlock/bg.png" alt="" class="mainBlock__bg">
+
+                  </div>
+                  <div class="swiper-slide main-slide">
+                    <div class="container">
+                        <h1 class="mainBlock__heading main-heading">производство электрощитового оборудования</h1>
+                        <p class="mainBlock__text">Запишитесь на бесплатную консультацию и мы ответим на все ваши вопросы</p>
+                        <div class="mainBlock__wraper">
+                            <button class="orangeBtn mainBlock__wraper__button">заказать расчет </button>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/watsapp.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/telegram.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/vk.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/instagram.png" alt=""
+                                    class="mainBlock__seti__img"></a>
                         </div>
-                        <img src="./media/mainBlock/bg.png" alt="" class="mainBlock__bg">
-
                     </div>
-                    <div class="swiper-slide main-slide">
-                        <div class="container">
-                            <h1 class="mainBlock__heading main-heading">продажа электротехнических изделий</h1>
-                            <p class="mainBlock__text">Запишитесь на бесплатную консультацию и мы ответим на все ваши
-                                вопросы</p>
-                            <div class="mainBlock__wraper">
-                                <button class="orangeBtn mainBlock__wraper__button">перейти </button>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/watsapp.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/telegram.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/vk.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                                <a href="" class="mainBlock__seti"><img src="./media/icons/instagram.png" alt=""
-                                        class="mainBlock__seti__img"></a>
-                            </div>
+                    <img src="./media/mainBlock/bg.png" alt="" class="mainBlock__bg">
+
+                  </div>
+                  <div class="swiper-slide main-slide">
+                    <div class="container">
+                        <h1 class="mainBlock__heading main-heading">продажа электротехнических изделий</h1>
+                        <p class="mainBlock__text">Запишитесь на бесплатную консультацию и мы ответим на все ваши вопросы</p>
+                        <div class="mainBlock__wraper">
+                            <button class="orangeBtn mainBlock__wraper__button">перейти </button>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/watsapp.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/telegram.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/vk.png" alt=""
+                                    class="mainBlock__seti__img"></a>
+                            <a href="" class="mainBlock__seti"><img src="./media/icons/instagram.png" alt=""
+                                    class="mainBlock__seti__img"></a>
                         </div>
-                        <img src="./media/mainBlock/bg.png" alt="" class="mainBlock__bg">
-
                     </div>
+                    <img src="./media/mainBlock/bg.png" alt="" class="mainBlock__bg">
+
+                  </div>
                 </div>
-                <div class="swiper-pagination main-slider-paggination desk"></div>
-            </div>
+              </div>
         </section>
         <section class="services">
             <div class="container">
@@ -221,8 +149,6 @@
                     </div>
                 </div>
             </div>
-            <img src="./media/icons/sercleft.svg" alt="" class="services-serc-left">
-            <img src="./media/icons/sercright.svg" alt="" class="services-serc-right">
         </section>
         <section class="products">
             <div class="container">
@@ -494,7 +420,6 @@
                     </div>
                 </div>
             </div>
-            <img src="" alt="" class="team-gold-serc">
         </section>
         <section class="sertif">
             <div class="container">
@@ -538,11 +463,10 @@
             </div>
         </section>
         <section class="contacts">
-            <div class="container">
+            <div class="container"> 
                 <div class="contacts-left">
                     <p class="contacts-left__heading">оСТАЛИСЬ ВОПРОСЫ?</p>
-                    <p class="contacts-left__text">Напишите свой вопрос менедежру в <br class="mob"> WhatsApp или
-                        Telegram.</p>
+                    <p class="contacts-left__text">Напишите свой вопрос менедежру в <br class="mob"> WhatsApp или Telegram.</p>
                     <a class="contacts-left__item">
                         <img src="./media/questions/wp.svg" alt="" class="contacts-left__item__img">
                         <p class="contacts-left__item__text">WHATSAPP</p>
@@ -601,103 +525,6 @@
             <img src="./media/questions/bg.png" alt="" class="contacts-bg">
         </section>
     </main>
-    <footer>
-        <div class="container">
-            <div class="footer__textr">
-                <img src="./media/icons/logo.png" alt="" class="footer__text__logo">
-                <p class="footer__text__text">Мы динамично развивающаяся строительная компания , работающая на рынке с
-                    2015 года. Будем рады стать вашим партнером и строить долгосрочные взаимовыгодные отношения!</p>
-                <div class="footer__text__seti">
-                    <a href="" class="mainBlock__seti"><img src="./media/icons/watsapp.png" alt=""
-                            class="mainBlock__seti__img"></a>
-                    <a href="" class="mainBlock__seti"><img src="./media/icons/telegram.png" alt=""
-                            class="mainBlock__seti__img"></a>
-                    <a href="" class="mainBlock__seti"><img src="./media/icons/vk.png" alt=""
-                            class="mainBlock__seti__img"></a>
-                    <a href="" class="mainBlock__seti"><img src="./media/icons/instagram.png" alt=""
-                            class="mainBlock__seti__img"></a>
-                </div>
-            </div>
-            <div class="footer__nav">
-                <p class="footer__nav__heading">НАВИГАЦИЯ</p>
-                <ul class="footer__nav__list">
-                    <li class="footer__nav__list__item"> <a href="">Услуги</a></li>
-                    <li class="footer__nav__list__item"> <a href="">О нас</a></li>
-                    <li class="footer__nav__list__item"> <a href="">Отзывы</a></li>
-                    <li class="footer__nav__list__item"> <a href="">Сертификаты</a></li>
-                    <li class="footer__nav__list__item"> <a href="">Клиенты</a></li>
-                    <li class="footer__nav__list__item"> <a href="">Контакты</a></li>
-                    <li class="footer__nav__list__item"> <a href="">Вакансии</a></li>
-                    <li class="footer__nav__list__item"> <a href="">Строй. материалы</a></li>
-                </ul>
-            </div>
-            <div class="footer__contacts">
-                <p class="footer__contacts__heading">КОНТАКТЫ</p>
-                <ul class="footer__contacts__list">
-                    <li class="footer__contacts__list__item"><img src="./media/icons/location.svg" alt=""
-                            class="footer__contacts__list__img">
-                        <p class="footer__contacts__list__item__text">Москва, ул.Криворожская, д.6А, стр.2, офис 317</p>
-                    </li>
-                    <li class="footer__contacts__list__item"><img src="./media/icons/phone.svg" alt=""
-                            class="footer__contacts__list__img">
-                        <p class="footer__contacts__list__item__text">+7 (495) 145-75-17</p>
-                    </li>
-                    <li class="footer__contacts__list__item"><img src="./media/icons/mail.png" alt=""
-                            class="footer__contacts__list__img">
-                        <p class="footer__contacts__list__item__text">tsi@tsind.ru</p>
-                    </li>
-                    <li class="footer__contacts__list__item"><img src="./media/icons/clock.png" alt=""
-                            class="footer__contacts__list__img">
-                        <p class="footer__contacts__list__item__text">ПН-ПТ: с 9:00 до 18:00</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__form">
-                <p class="footer__form__heading">ЗАКАЗ ЗВОНКА</p>
-                <div class="footer__form__form">
-                    <input type="text" class="footer__form__inp" placeholder="Ваше имя">
-                    <input type="text" class="footer__form__inp" placeholder="Телефон">
-                    <div class="politycInp">
-                        <input type="checkbox" id="formPolityc1" class="politycCheckbox pol1" checked>
-                        <label for="formPolityc1" class="politycVisual polvis1"><img src="./media/icons/goldYes.svg"
-                                alt="" class="politycVisual__img polImg1"></label>
-                        <label for="formPolityc1" class="politycText poltext1">Я согласен с политикой
-                            конфиденциальности</label>
-                    </div>
-                    <button class="orangeBtn footer__form__btn">ЗАПИСАТЬСЯ</button>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <div class="popup-form popup form">
-        <div class="footer__form">
-            <p class="footer__form__heading">ЗАКАЗ ЗВОНКА</p>
-            <div class="footer__form__form">
-                <input type="text" class="footer__form__inp" placeholder="Ваше имя">
-                <input type="text" class="footer__form__inp" placeholder="Телефон">
-                <div class="politycInp">
-                    <input type="checkbox" id="formPolityc1" class="politycCheckbox pol1" checked>
-                    <label for="formPolityc1" class="politycVisual polvis1"><img src="./media/icons/goldYes.svg"
-                            alt="" class="politycVisual__img polImg1"></label>
-                    <label for="formPolityc1" class="politycText poltext1">Я согласен с политикой
-                        конфиденциальности</label>
-                </div>
-                <button class="orangeBtn footer__form__btn">ЗАПИСАТЬСЯ</button>
-            </div>
-        </div>
-    </div>
-
-    <img src="" alt="" class="popup-close-img">
-
-    <div class="img-popup popup">
-        <img src="./media/setrif/1.png" alt="" class="popupInsightImg">
-    </div>
-    <div class="popupClose"></div>
-
-
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/app.js"></script>
-</body>
-
-</html>
+<?php
+get_footer(); ?>
