@@ -3125,7 +3125,6 @@ footer {
 }
 
 .tovary-items-list {
-    overflow-y: scroll;
     display: grid;
     row-gap: 50px;
 
@@ -3156,7 +3155,7 @@ footer {
 .smallListNameRow {
     display: grid;
     // grid-template-columns:  53px 282px 203px 62px 62px;
-    grid-template-columns: 77px 63px 279px 160px 59px 59px;
+    grid-template-columns: 77px 63px 279px 134px  59px 59px;
     column-gap: 13px;
     padding: 24px 12px;
 }
@@ -3197,11 +3196,12 @@ footer {
         & .tovar-item__info {
             background: none;
             display: grid;
-            grid-template-columns: 63px 279px 160px 59px 59px;
+            grid-template-columns: 63px 279px 134px 59px 59px;
             column-gap: 13px;
             border-left: 1px solid black;
             border-radius: 0;
             align-items: flex-start;
+            padding-top: 18px;
 
             & * {
                 color: black;
@@ -3414,7 +3414,7 @@ footer {
 .grid-top-izb {
     padding: 0 33px;
     display: grid;
-    grid-template-columns: 112px 94px 320px 144px 117px 94px 196px;
+    grid-template-columns: 91px 112px 320px 144px 117px 94px 196px;
     column-gap: 10px;
 }
 
@@ -6197,6 +6197,7 @@ footer {
                     & .nameSpan {
                         width: 70px;
                         margin-right: 30px;
+                        flex-shrink: 0;
                     }
 
                     & .tover-item__info__price {
@@ -6204,7 +6205,7 @@ footer {
                         margin-bottom: 0;
                         display: flex;
                         justify-content: flex-start;
-                        column-gap: 20px;
+                        column-gap: 0;
                         width: 100%;
                         margin-bottom: 20px;
                         color: #000;
@@ -6220,7 +6221,7 @@ footer {
                         margin-bottom: 0;
                         display: flex;
                         justify-content: flex-start;
-                        column-gap: 20px;
+                        column-gap: 0;
                         width: 100%;
                         margin-bottom: 20px;
                         color: #000;
@@ -6236,18 +6237,21 @@ footer {
                         margin-bottom: 0;
                         display: flex;
                         justify-content: flex-start;
-                        column-gap: 20px;
+                        column-gap: 0;
                         width: 100%;
                         margin-bottom: 20px;
                         & .tovar-kod__text {
                             display: flex;
                             justify-content: flex-start;
-                            column-gap: 20px;
+                            column-gap: 0;
                             width: 100%;
 
                         }
                         & .nameSpan {
                             display: block;
+                            width: 70px;
+                            margin-right: 30px;
+                            flex-shrink: 0;
                         }
                     }
 
@@ -6262,10 +6266,9 @@ footer {
                         margin-bottom: 0;
                         display: flex;
                         justify-content: flex-start;
-                        column-gap: 20px;
+                        column-gap: 0;
                         width: 100%;
                         margin-bottom: 20px;
-                        
                     }
 
                     & .tovar-item__info__ed-izm {
@@ -6273,11 +6276,13 @@ footer {
                         margin-bottom: 0;
                         display: flex;
                         justify-content: flex-start;
-                        column-gap: 20px;
+                        column-gap: 0;
                         width: 100%;
                         margin-bottom: 20px;
+                        flex-shrink: 0;
                         & .nameSpan {
                             display: block;
+                            flex-shrink: 0;
                         }
                     }
 
@@ -6328,5 +6333,8 @@ footer {
     }
     .rew-wraper {
         row-gap: 30px;
+    }
+    .izbrannoe-heading {
+        margin-top: 90px;
     }
 }
