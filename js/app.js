@@ -265,3 +265,14 @@ if(tovarIzbImg.length > 0 ) {
     }
   })
 }
+
+
+//сортировка в избранном
+
+let izbrannoeSort = document.querySelector('.izbrannoe-sort-block');
+if(izbrannoeSort) {
+  let izbKategories = document.querySelector('.izb-kategories')
+  izbrannoeSort.onclick = ()=>{
+    izbKategories.classList.toggle('active')
+  }
+}
