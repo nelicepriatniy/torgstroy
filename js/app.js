@@ -275,4 +275,10 @@ if(izbrannoeSort) {
   izbrannoeSort.onclick = ()=>{
     izbKategories.classList.toggle('active')
   }
+  izbKategories.onmouseleave  = () => {
+    izbKategories.classList.remove('active')
+  }
+  // izbKategories.onmouseout = () => {
+  //   izbKategories.classList.add('active')
+  // }
 }
