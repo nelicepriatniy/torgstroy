@@ -282,3 +282,30 @@ if(izbrannoeSort) {
   //   izbKategories.classList.add('active')
   // }
 }
+
+// Переключение формы на некст степ
+
+let oformlenieBlock = document.querySelector('.oformlenieWraper');
+
+if(oformlenieBlock) {
+  let oformlenieFormItem = oformlenieBlock.querySelectorAll('.oformlenieFormItem'),
+  oformlenieFormWidth = oformlenieBlock.querySelector('.oformlenieForm').clientWidth;
+
+  for(let i = 0; oformlenieFormItem.length > i; i++) {
+    oformlenieFormItem[i].style.width = oformlenieFormWidth + 'px';
+  }
+  let oformlenieFormWraper = oformlenieBlock.querySelector('.oformlenieFormWraper'),
+      oformlenieFormItemWidth = oformlenieFormItem[0].clientWidth,
+      widthMuve = (oformlenieFormItemWidth + 200) * -1,
+      nextStep = oformlenieBlock.querySelector('.nextStep'),
+      oformlenieLine = document.querySelector('.oformlenieLine'),
+      setActiveNum = document.querySelectorAll('.oformlenieNum');
+      nextStep.onclick = ()=>{
+        console.log(oformlenieFormItem);
+        oformlenieFormWraper.style.transform = "translateX("+widthMuve+"px)";
+        for(let i = 0; setActiveNum.length > i; i++) {
+          setActiveNum[i].classList.add('active')
+        }
+        oformlenieLine.classList.add('active')
+      }
+}

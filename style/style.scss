@@ -4282,6 +4282,226 @@ footer {
         text-align: center;
     }
 }
+.oformlenieHeading {
+    margin-top: 180px;
+    margin-bottom: 40px;
+    & .container {
+        text-align: center;
+    }
+}
+.oformlenieHeadingText {
+    color: #000;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.oformlenieWraper {
+    margin-bottom: 50px;
+    & .container {
+        display: flex;
+    }
+}
+.oformlenieMain {
+    border-radius: 30px;
+    background: #F1F1F1;
+    padding-top: 40px;
+    height: 750px;
+    width: 733px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.oformlenieTop {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+.oformlenieNum {
+    background: #FFF;
+    filter: drop-shadow(0px 4.923px 4.923px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: #EA7A3A;
+    font-size: 19.692px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    &.active {
+        background: #EA7A3A;
+        color: white;
+    }
+}
+.oformlenieFormWraper {
+    display: flex;
+    width: auto;
+    transition: all .4s ease;
+}
+.oformlenieLine {
+    background: linear-gradient(90deg, #EA7A3A -12.6%, #FFF 71.14%);
+    box-shadow: 0px 1.231px 4.923px 0px rgba(0, 0, 0, 0.25);
+    width: 151.385px;
+    height: 1.231px;
+    transition: all .4s ease;
+    &.active {
+        background: #EA7A3A;
+    }
+}
+.oformlenieForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 550px;
+    height: 100%;
+    justify-content: center;
+}
+.oformlenieFormItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 200px;
+    width: 550px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.oformlenieForm-top {
+    display: flex;
+    column-gap: 22px;
+    margin-bottom: 70px;
+    width: 100%;
+}
+.oformlenieInput {
+    color: #787878;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #787878;
+    background: none;
+    width: 100%;
+    &.first {
+        margin-bottom: 40px;
+    }
+}
+.sendOfer {
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.42px;
+    text-transform: uppercase;
+    width: 380px;
+    height: 55px;
+    flex-shrink: 0;
+    border: 0.792px solid #000;
+    margin-top: 50px;
+}
+.oformlenieFormTextarea {
+    color: #787878;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #787878;
+    background: none;
+    width: 100%;
+    resize: none;
+}
+.usualy {
+    color: #BEBEBE;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.nextStep {
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.42px;
+    text-transform: uppercase;
+    width: 380px;
+    height: 53.451px;
+    flex-shrink: 0;
+    border: 1px solid #000;
+}
+.oformlenieList {
+    width: 370px;
+    height: 746px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #F1F1F1;
+    padding: 44px 17px 0 18px;
+    flex-shrink: 0;
+    position: relative;
+}
+.oformlenieListWraper {
+    height: 570px;
+    overflow-y: scroll;
+}
+.oformlenieListItem {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+.oformlenieListItemImg {
+    width: 100px;
+    height: 61px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
+}
+.oformlenieListItemText {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.oformlenieLListItogo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.Itogotext {
+    color: #000;
+    font-size: 28.75px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+.oformlenieItogoLine {
+    width: 144px;
+}
+.oformlenieItogoPrice {
+    color: #000;
+    font-size: 17.692px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
 @media (max-width: 1024px) {
     * {
         // outline: solid 1px red;
@@ -6818,31 +7038,158 @@ footer {
     .izb-item-wraper-nal {
         margin-bottom: 14px;
     }
-    .nalichie {
-        
+    .oformlenieHeading {
+        margin-bottom: 40px;
+        margin-top: 100px;
     }
-    .artic {
+    .container {
     }
-    .price {
+    .oformlenieHeadingText {
+        color: #000;
+        text-align: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
-    .kol-vo {
+    .oformlenieWraper {
+        & .container {
+            flex-direction: column;
+        }
     }
-    .izb-item-kol-vo {
+    .oformlenieMain {
+        width: 100%;
+        border-radius: 10px;
+        background: #F4F4F4;
+        height: auto;
+        padding: 38px 23px 30px 23px;
     }
-    .izb-kol-vo-top {
+    .oformlenieTop {
+        margin-bottom: 50px;
     }
-    .izb-item-kol-vo-input {
+    .oformlenieNum {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
-    .izb-item-kol-vo-button {
+    .active {
     }
-    .izb-item-btm {
+    .oformlenieLine {
+        width: 50px;
     }
-    .izb-item-btm-text {
+    .oformlenieForm {
+        width: 100%;
     }
-    .izb-buttons {
+    .form {
     }
-    .izb-button-del {
+    .oformlenieFormWraper {
     }
-    .izb-button-kor {
+    .oformlenieFormItem {
+        width: 240px;
+    }
+    .oformlenieForm-top {
+        row-gap: 30px;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .oformlenieInput {
+        color: #787878;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+    }
+    .oformlenieFormTextarea {
+        color: #787878;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+    }
+    .usualy {
+        display: none;
+    }
+    .nextStep {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 1.76px;
+        text-transform: uppercase;
+        width: 240px;
+        height: 47px;
+        flex-shrink: 0;
+        border: 1px solid #000;
+        margin-top: 27px;
+    }
+    .first {
+    }
+    .sendOfer {
+        color: #000;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 1.76px;
+        text-transform: uppercase;
+        width: 240px;
+        height: 47px;
+        flex-shrink: 0;
+        border: 1px solid #000;
+    }
+    .oformlenieList {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        padding: 28px 13px 30px 13px;
+    }
+    .oformlenieListWraper {
+        height: 260px;
+    }
+    .oformlenieListItem {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .oformlenieListItemImg {
+        width: 85px;
+        height: 52px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-right: 10px;
+    }
+    .oformlenieListItemText {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    .oformlenieLListItogo {
+    }
+    .Itogotext {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    .oformlenieItogoLine {
+    }
+    .oformlenieItogoPrice {
+        color: #000;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
     }
 }
