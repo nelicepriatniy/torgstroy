@@ -4395,6 +4395,10 @@ footer {
         margin-bottom: 40px;
     }
 }
+.finalBtnContainer {
+    display: flex;
+    column-gap: 10px ;
+}
 .sendOfer {
     color: #000;
     font-size: 22px;
@@ -4403,7 +4407,21 @@ footer {
     line-height: normal;
     letter-spacing: 2.42px;
     text-transform: uppercase;
-    width: 380px;
+    width: 260px;
+    height: 55px;
+    flex-shrink: 0;
+    border: 0.792px solid #000;
+    margin-top: 50px;
+}
+.backBtn {
+    color: #000;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2.42px;
+    text-transform: uppercase;
+    width: 277px;
     height: 55px;
     flex-shrink: 0;
     border: 0.792px solid #000;

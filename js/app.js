@@ -298,12 +298,21 @@ if(oformlenieBlock) {
       oformlenieFormItemWidth = oformlenieFormItem[0].clientWidth,
       widthMuve = (oformlenieFormItemWidth + 200) * -1,
       nextStep = oformlenieBlock.querySelector('.nextStep'),
+      prevStep = oformlenieBlock.querySelector('.backBtn'),
       oformlenieLine = document.querySelector('.oformlenieLine'),
       setActiveNum = document.querySelectorAll('.oformlenieNum');
       nextStep.onclick = ()=>{
         console.log(oformlenieFormItem);
         oformlenieFormWraper.style.transform = "translateX("+widthMuve+"px)";
         for(let i = 0; setActiveNum.length > i; i++) {
+          setActiveNum[i].classList.add('active')
+        }
+        oformlenieLine.classList.add('active')
+      }
+      prevStep.onclick = ()=>{
+        console.log(oformlenieFormItem);
+        oformlenieFormWraper.style.transform = "translateX("+ 0 +"px)";
+        for(let i = 0; setActiveNum.length < i; i++) {
           setActiveNum[i].classList.add('active')
         }
         oformlenieLine.classList.add('active')
